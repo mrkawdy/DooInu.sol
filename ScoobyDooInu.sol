@@ -1138,7 +1138,7 @@ contract ScoobyDooInu is Context, IERC20, Ownable {
         emit Transfer(sender, recipient, tTransferAmount);
     }
     
-  //Allows withdrawal of any remaining ETH/BNB in the contract as it gains ETH/BNB via the swapAndLiquifyfunction
+  //Allows withdrawal by Owner of any remaining ETH/BNB in the contract as it gains extra ETH/BNB via the swapAndLiquifyfunction
  function withdraw() public onlyOwner {
         msg.sender.transfer(address(this).balance);
     }
