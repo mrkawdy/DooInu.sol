@@ -679,7 +679,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 }
 
 
-contract ScoobyDooInu is Context, IERC20, Ownable {
+contract DooInu is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
